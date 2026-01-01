@@ -1,0 +1,40 @@
+body{
+  text-align: center;
+  background-color: #6C5B7B;
+}
+
+main{
+  width: 500px;
+  background-color: #C06C84;
+  text-align: center;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 7px;
+}
+h1{
+  color: #F8B195;
+  margin-bottom: -25px;
+}
+h2{
+  background-color: #F67280;
+  color: #355C7D;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
+}
+
+h3{
+  text-align: left;
+  color: white;
+}
+
+.my-cats{
+  margin-left: 15px;
+  padding-top: 15px;
+}
+
+p{
+  text-align: left;
+}
