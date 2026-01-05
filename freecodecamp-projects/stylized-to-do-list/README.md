@@ -1,7 +1,8 @@
 # Stylized To-Do List
+This was part of freeCodeCamp's Basic CSS section in the Responsive Web Design Certification
 
 ## Purpose
-To practice CSS layouts
+To practice CSS layouts 
 
 ## What I practiced
 - Radial-gradient background
