@@ -1,0 +1,86 @@
+<!--
+*** HTML REQUIREMENTS ***
+
+  div.container
+    form
+      input text id name
+      input email id email
+
+      select #position
+
+      fieldset .radio-group
+        input radio (labels for availability opions, e.g.: full-time, part-time) / group name = availability
+        associate with label
+      textarea #message
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <form action="POST">
+      <label for="name">Name: </label>
+      <input type="text" 
+      id="name"
+      placeholder="E.g.: Lily Smith"
+      required
+      >
+      
+      <label for="email">Email: </label>
+      <input type="email" 
+      id="email"
+      placeholder="E.g.: lilysmith@company.com"
+      required
+      >
+
+      <label for="position">Position: </label>
+      <select name="position" id="position" required>
+        <option value="" disabled selected>--Select an option--</option>
+        <option value="script-supervisor">Script Supervisor</option>
+        <option value="assistant-director">Assistant Director</option>
+        <option value="casting-producer">Casting Producer</option>
+      </select>
+
+      <fieldset class="radio-group" name="availability">
+        <legend>Availability:</legend>
+        <input 
+        type="radio" 
+        id="pre-production-availability-option" 
+        name="availability"
+        value="pre-production"
+        />
+        <label for="pre-production-availability-option">Pre-Production</label>
+
+        <input 
+        type="radio" 
+        id="production-availability-option"
+        name="availability"
+        value="production"
+        />
+        <label for="production-availability-option">Production</label>
+
+        <input 
+        type="radio" 
+        id="full-availability-option"
+        name="availability"
+        value="full-availability">
+        <label for="full-availability-option">Full Availability</label>
+      </fieldset>
+
+      <label for="message">Optional Aditional Information:</label>
+      <textarea 
+      name="message" 
+      id="message"
+      ></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

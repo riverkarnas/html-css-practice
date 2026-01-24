@@ -1,0 +1,69 @@
+/*
+*** CSS REQUIREMENTS
+
+  input:focus, input:textarea
+    border-color: new
+  input:valid, select:valid, textarea:valid
+    border-color: green
+  input:invalid, select:invalid, textarea:invalid
+    border-color: red
+  
+  button:hover
+    background-color
+
+  .radio-group input:checked
+    border-color
+    background-color
+    box-shadow
+
+  radio.buttons labl: checked
+    text-color
+  
+  input:first-of-type
+    style it differently
+*/  
+
+input:focus, textarea:focus{
+  border: solid 0.2em blue;
+  outline: none;
+}
+
+input:valid, select:valid, textarea:valid{
+  border: solid 0.2em green;
+}
+
+input:invalid, select:invalid, textarea:invalid{
+  border: solid 0.2em red;
+}
+
+/* ESTILIZAR DEPOIS */
+
+input:hover, textarea:focus, select:focus{
+  
+}
+/**/
+
+button:hover{
+  background-color: yellow;
+}
+
+/* SOLUCIONAR DEPOIS */
+.radio-group input[type="radio"]:checked{
+  border-color: purple;
+  background-color: yellow;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+/**/
+
+input:first-of-type{
+  background-color: aqua;
+}
+
+label:where(fieldset):checked{
+  color: blue;
+}
+
+.radio-group input[type="radio"]:checked + label{
+  color: red;
+}
