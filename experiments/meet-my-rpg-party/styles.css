@@ -1,0 +1,61 @@
+:root{
+  font-size: 17px;
+}
+
+header {
+  margin-left: 20%;
+  background-color: yellow;
+}
+
+#campaign-description{
+  font-size: 1rem;
+}
+
+#campaign-synopsis{
+  font-size: 0.9rem;
+  margin-right: 65%;
+}
+
+#the-party{
+  width: 50%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.4fr 1fr 1fr;
+  grid-template-areas: "meet-the-party meet-the-party" "azhara boblin" "kira mirabel";
+  font-size: 0.9rem;
+  background-color: rgb(64, 62, 62);
+  border: 1px solid grey;
+  border-radius: 15%;
+  
+}
+
+#the-party h2{
+  grid-area: meet-the-party;
+  margin: 0 auto;
+  padding: 0;
+  height: 20%;
+}
+
+.character{
+  margin: 0 7% 3% 7%;
+  background-color: rgb(112, 107, 107);
+  border: 1px solid grey;
+  border-radius: 15%;
+}
+
+#azhara{
+  grid-area: azhara;
+}
+
+#boblin{
+  grid-area: boblin;
+}
+
+#kira{
+  grid-area: kira;
+}
+
+#mirabel{
+  grid-area: mirabel;
+}
