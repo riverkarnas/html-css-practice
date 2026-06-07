@@ -1,5 +1,10 @@
 :root{
   font-size: 17px;
+  box-sizing: border-box;
+  --highlights-color: rgb(143, 139, 139);
+  --lighter-background: rgb(112, 107, 107);
+  --darker-background: rgb(64, 62, 62);
+  background-color: black;
 }
 
 header {
@@ -20,28 +25,73 @@ header {
   width: 50%;
   display: grid;
   margin: 0 auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.4fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr;
   grid-template-areas: "meet-the-party meet-the-party" "azhara boblin" "kira mirabel";
   font-size: 0.9rem;
-  background-color: rgb(64, 62, 62);
+  background-color: var(--darker-background);
   border: 1px solid grey;
-  border-radius: 15%;
+  border-radius: 5%;
   
 }
 
 #the-party h2{
   grid-area: meet-the-party;
   margin: 0 auto;
-  padding: 0;
+  padding-bottom: 5%;
   height: 20%;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--highlights-color);
+  letter-spacing: 0.2rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .character{
   margin: 0 7% 3% 7%;
-  background-color: rgb(112, 107, 107);
-  border: 1px solid grey;
-  border-radius: 15%;
+  background-color: var(--lighter-background);
+  border: 1px solid var(--highlights-color);
+  border-radius: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+  grid-template-areas: "character-picture character-name character-name" "character-picture class-and-race class-and-race"  "character-picture character-bio character-bio" "tag tag tag"
+}
+
+.character-name{
+  grid-area: character-name;
+  margin: 5% 0 0 5%;
+}
+
+.character-picture{
+  grid-area: character-picture;
+  width: 85%;
+  margin: 8% 0 0 8%;
+  border-radius: 5%;
+}
+
+.class-and-race{
+  grid-area: class-and-race;
+  margin-top: 2%;
+  margin-left: 5%;
+  font-size: 0.7rem;
+}
+
+.character-bio{
+  grid-area: character-bio;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-top: 0;
+  font-size: 0.8rem;
+}
+.tag{
+  grid-area: tag;
+  margin-left: 15%;
+  color: white;
+  background-color: blueviolet;
+  border-radius: 10%;
 }
 
 #azhara{
