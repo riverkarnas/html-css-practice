@@ -4,6 +4,7 @@
   --light-color1: #a6adc8;
   --light-color2: #cdd6f4;
   --light-color3: #cba6f7;
+  --light-color4: #a77cd7;
   --highlights-color: rgb(143, 139, 139);
   --dark-color1: #1e1e2e;
   --dark-color2: #313244;
@@ -14,6 +15,20 @@
 header {
   text-align: center;
   color: var(--light-color2);  
+}
+
+#navigation{
+  background-color: var(--light-color4);
+}
+#navigation a{
+  border: 1px solid var(--light-color2); 
+  color: var(--dark-color1);
+  padding: 5px;
+}
+
+#navigation a:hover{
+  background-color: var(--dark-color1);
+  color: var(--light-color3);
 }
 
 #campaign-description{
@@ -32,13 +47,10 @@ header {
   display: grid;
   margin: 0 auto;
   padding-top: 2%;
-  padding-bottom: 2%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.2fr 1fr 1fr;
   grid-template-areas: "meet-the-party meet-the-party" "azhara boblin" "kira mirabel";
   font-size: 0.9rem;
-  background-color: var(--darker-background);
-  border: 1px solid grey;
   border-radius: 5%;
   
 }
@@ -52,7 +64,7 @@ header {
   font-size: 1.5rem;
   color: var(--highlights-color);
   letter-spacing: 0.2rem;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .character{
@@ -149,8 +161,48 @@ header {
   grid-area: mirabel;
 }
 
-#session-count{
-  background-color: white;
+#sessions-count{
+  text-align: center;
+  grid-area: sessions-count;
+  padding-bottom: 5%;
+}
+
+#sessions-count table{
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: var(--light-color1);
+  border-collapse: separate;
+  border-spacing: 0.6rem;
+}
+
+#sessions-count table thead{
+  color: var(--highlights-color);
+}
+
+#sessions-count table th{
+  padding-right: 5%;
+}
+
+#sessions-count table tbody tr:nth-child(even){
+  background-color: var(--darker-background);
+}
+
+#sessions-count table tbody tr:nth-child(odd){
+  background-color: var(--dark-color2);
+}
+
+#sessions-count h2{
+  margin: 0 auto;
+  padding-bottom: 2%;
+  padding-top: 4%;
+  height: 20%;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--highlights-color);
+  letter-spacing: 0.2rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 0;
 }
 
 footer{
