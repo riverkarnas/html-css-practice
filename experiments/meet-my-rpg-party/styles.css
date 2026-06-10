@@ -64,7 +64,7 @@ header {
   font-size: 1.5rem;
   color: var(--highlights-color);
   letter-spacing: 0.2rem;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .character{
@@ -136,8 +136,9 @@ header {
   color: var(--light-color3);
   background-color: var(--dark-color2);
   padding: 0;
-  margin-right: 50%;
+  margin-right: 0;
   list-style: none;
+  display: inline-block;
 }
 
 .character:hover .tags li{
@@ -217,4 +218,35 @@ a{
 
 a:visited{
   color: #cba6f7;
+}
+
+@media screen and (max-width:480px){
+  #campaign-synopsis{
+    max-width: 75%;
+  }
+
+
+  #the-party h2{
+    max-height: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 10%;
+  }
+
+
+  #the-party{
+    width: 80%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "meet-the-party" "azhara" "boblin" "kira" "mirabel";
+    font-size: 0.9rem;
+    border-radius: 5%;
+    
+  }
+
+  .character{
+    margin-bottom: 5%;
+  }
 }
